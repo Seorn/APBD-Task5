@@ -6,6 +6,7 @@ namespace APBD_Task5.Models
     {
         public int Id { get; set; }
 
+        [Range(1, int.MaxValue, ErrorMessage = "RoomId must be greater than zero.")]
         public int RoomId { get; set; }
 
         [Required]
